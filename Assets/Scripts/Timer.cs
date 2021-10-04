@@ -9,8 +9,14 @@ public class Timer : MonoBehaviour
     //This is set in the Unity Scene window
     [SerializeField] private float totalTime;
 
+
+    // Item Pickups
+    public bool powerUp = false;
+    public bool hazard = false;
+
+
     //current time
-    private float currentTime;
+    [SerializeField] private float currentTime;
 
 
     //timer text to be displayed on screen
@@ -30,6 +36,18 @@ public class Timer : MonoBehaviour
 
         if (currentTime >= 0)
         {
+            if (powerUp == true)
+            {
+                currentTime += 10;
+                powerUp = false;
+            }
+
+            if (hazard == true)
+            {
+                currentTime -= 10;
+                hazard = false;
+            }
+
             currentTime -= 1 * Time.deltaTime;
             timerText.text = currentTime.ToString("00") + "s";
         }
