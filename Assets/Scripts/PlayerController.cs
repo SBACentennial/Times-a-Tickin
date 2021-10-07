@@ -45,4 +45,18 @@ public class PlayerController : MonoBehaviour
 
         return Physics2D.OverlapCircle(groundCheckPos.position, groundCheckRadius, whatIsGround);
     }
+
+	private void OnCollisionEnter2D(Collision2D other) {
+		// check if player is on the moving floor
+		if (transform.parent == null && other.gameObject.tag == "MovingPlatform") {
+			transform.parent = other.gameObject.transform;
+		}
+	}
+
+	private void OnCollisionExit2D(Collision2D other) {
+		// check if player is NOT on the moving floor
+		if (transform.parent != null && other.gameObject.tag == "MovingPlatform") {
+			transform.parent = null;
+		}
+	}
 }
