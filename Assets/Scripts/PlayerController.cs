@@ -10,16 +10,18 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float groundCheckRadius = 0.15f;
     [SerializeField] private Transform groundCheckPos;
     [SerializeField] private LayerMask whatIsGround;
-
+    private Animator anim;
 
 
     // Private Variables
     private Rigidbody2D rBody;
     private bool isGrounded = false;
+    private bool isFacingRight = true;
     // Start is called before the first frame update
     void Start()
     {
         rBody = GetComponent<Rigidbody2D>();
+        anim = GetComponent<Animator>();
     }
 
     // Physics
@@ -35,6 +37,19 @@ public class PlayerController : MonoBehaviour
             isGrounded = false;
         }
 
+        if (isFacingRight && rBody.velocity.x < 0)
+        {
+            Flip();
+        }
+        else if (!isFacingRight && rBody.velocity.x > 0)
+        {
+            Flip();
+        }
+
+
+        anim.SetFloat("xVelocity", Mathf.Abs(rBody.velocity.x));
+        anim.SetFloat("yVelocity", rBody.velocity.y);
+        anim.SetBool("isGrounded", isGrounded);
 
 
         rBody.velocity = new Vector2(horiz * speed, rBody.velocity.y);
@@ -59,4 +74,13 @@ public class PlayerController : MonoBehaviour
 			transform.parent = null;
 		}
 	}
+
+    private void Flip()
+    {
+        Vector3 temp = transform.localScale;
+        temp.x *= -1;
+        transform.localScale = temp;
+
+        isFacingRight = !isFacingRight;
+    }
 }
