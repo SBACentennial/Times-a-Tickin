@@ -37,6 +37,8 @@ public class PlayerController : MonoBehaviour
             isGrounded = false;
         }
 
+        rBody.velocity = new Vector2(horiz * speed, rBody.velocity.y);
+
         if (isFacingRight && rBody.velocity.x < 0)
         {
             Flip();
@@ -52,7 +54,7 @@ public class PlayerController : MonoBehaviour
         anim.SetBool("isGrounded", isGrounded);
 
 
-        rBody.velocity = new Vector2(horiz * speed, rBody.velocity.y);
+        
     }
 
     private bool GroundCheck()
@@ -78,7 +80,7 @@ public class PlayerController : MonoBehaviour
     private void Flip()
     {
         Vector3 temp = transform.localScale;
-        temp.x *= -1;
+        temp.x *= -1f;
         transform.localScale = temp;
 
         isFacingRight = !isFacingRight;
