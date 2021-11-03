@@ -44,6 +44,9 @@ TagManager:
   - name: BackGround
     uniqueID: 1140180705
     locked: 0
+  - name: Sign
+    uniqueID: 3279050711
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0
