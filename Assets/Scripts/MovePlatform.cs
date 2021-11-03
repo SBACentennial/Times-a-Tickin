@@ -18,6 +18,6 @@ public class MovePlatform : MonoBehaviour
 
 	void FixedUpdate()
 	{
-		rbPlatform.MovePosition(new Vector2(defaultPosition.x + Mathf.PingPong(Time.time * movingSpeed, movingLength), defaultPosition.y));
+		transform.position = new Vector2(defaultPosition.x + Mathf.PingPong(Time.time * movingSpeed, movingLength), defaultPosition.y);
 	}
 }

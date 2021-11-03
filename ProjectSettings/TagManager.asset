@@ -44,6 +44,12 @@ TagManager:
   - name: BackGround
     uniqueID: 1140180705
     locked: 0
+  - name: Hazard
+    uniqueID: 2039683037
+    locked: 0
+  - name: ForeGround
+    uniqueID: 1102192183
+    locked: 0
   - name: Sign
     uniqueID: 3279050711
     locked: 0

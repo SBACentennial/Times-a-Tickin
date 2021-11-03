@@ -67,7 +67,8 @@ public class FallPlatform : MonoBehaviour
 	}
 
 	private void OnCollisionEnter2D(Collision2D other) {
-		if (other.gameObject.tag == "Player") {
+		if (other.transform.position.y >= transform.position.y && other.gameObject.tag == "Player") {
+			// Debug.Log("player on the platform");
 			isOnPlayer = true;
 		}
 	}

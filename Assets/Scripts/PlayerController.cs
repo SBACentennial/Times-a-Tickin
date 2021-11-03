@@ -66,14 +66,24 @@ public class PlayerController : MonoBehaviour
 	private void OnCollisionEnter2D(Collision2D other) {
 		// check if player is on the moving floor
 		if (transform.parent == null && other.gameObject.tag == "MovingPlatform") {
-			transform.parent = other.gameObject.transform;
+			transform.SetParent(other.transform);
+		}
+
+		// check if player is on the falling floor
+		if (transform.parent == null && other.gameObject.tag == "FallingPlatform") {
+			transform.SetParent(other.transform);
 		}
 	}
 
 	private void OnCollisionExit2D(Collision2D other) {
 		// check if player is NOT on the moving floor
 		if (transform.parent != null && other.gameObject.tag == "MovingPlatform") {
-			transform.parent = null;
+			transform.SetParent(null);
+		}
+
+		// check if player is NOT on the falling floor
+		if (transform.parent != null && other.gameObject.tag == "FallingPlatform") {
+			transform.SetParent(null);
 		}
 	}
 
