@@ -144,7 +144,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerRb: {fileID: 0}
-  bounceForce: 1400
+  bounceForce: 1600
   trampolineAnim: {fileID: 0}
 --- !u!61 &4249562064075085866
 BoxCollider2D:

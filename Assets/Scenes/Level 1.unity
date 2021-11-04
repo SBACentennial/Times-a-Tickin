@@ -16268,7 +16268,7 @@ PrefabInstance:
       objectReference: {fileID: 633584976}
     - target: {fileID: 4249562064075085867, guid: 3fb3105a81af4624993fc3121c962d66, type: 3}
       propertyPath: bounceForce
-      value: 1400
+      value: 1600
       objectReference: {fileID: 0}
     - target: {fileID: 4249562064075085867, guid: 3fb3105a81af4624993fc3121c962d66, type: 3}
       propertyPath: trampolineAnim
