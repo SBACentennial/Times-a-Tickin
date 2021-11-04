@@ -8,6 +8,7 @@ public class CoinHazard : MonoBehaviour
     [SerializeField] private Color newColor = Color.red;
 
     [SerializeField] private float timer = 2;
+    public AudioClip coinGood;
 
     private void Start()
     {
@@ -33,6 +34,7 @@ public class CoinHazard : MonoBehaviour
         Timer timeControllerScript = timeController.GetComponent<Timer>();
         if (other.CompareTag("Player"))
         {
+            AudioSource.PlayClipAtPoint(coinGood, transform.position, 0.5f);
             timeControllerScript.hazard = true;
             Destroy(gameObject);
         }

@@ -18846,7 +18846,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_ConfineMode: 0
   m_BoundingVolume: {fileID: 0}
-  m_BoundingShape2D: {fileID: 719277191}
+  m_BoundingShape2D: {fileID: 0}
   m_ConfineScreenEdges: 1
   m_Damping: 0
 --- !u!95 &265996267 stripped
@@ -20455,7 +20455,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &719277190
 Transform:
   m_ObjectHideFlags: 0
@@ -26728,6 +26728,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Coin Hazard
       objectReference: {fileID: 0}
+    - target: {fileID: 3003012341340899719, guid: 9629fc0b75bc725479b91257acd7df65, type: 3}
+      propertyPath: coinGood
+      value: 
+      objectReference: {fileID: 8300000, guid: 26ac11b781b15524296c6c8df1d47ed0, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9629fc0b75bc725479b91257acd7df65, type: 3}
 --- !u!4 &2028812237 stripped
@@ -27584,11 +27588,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3907716709813140033, guid: b29d77d9e3923c545b256df3e6a54a34, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4.3
+      value: 34.54
       objectReference: {fileID: 0}
     - target: {fileID: 3907716709813140033, guid: b29d77d9e3923c545b256df3e6a54a34, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.43
+      value: -0.91
       objectReference: {fileID: 0}
     - target: {fileID: 3907716709813140033, guid: b29d77d9e3923c545b256df3e6a54a34, type: 3}
       propertyPath: m_LocalPosition.z
@@ -27641,15 +27645,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3600739175670434077, guid: adfd2ca1ecb59764daf5ae5651a1e309, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6821842572278536800, guid: adfd2ca1ecb59764daf5ae5651a1e309, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4.0581264
+      value: 34.781876
       objectReference: {fileID: 0}
     - target: {fileID: 6821842572278536800, guid: adfd2ca1ecb59764daf5ae5651a1e309, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -4.202918
+      value: -4.6829185
       objectReference: {fileID: 0}
     - target: {fileID: 6821842572278536801, guid: adfd2ca1ecb59764daf5ae5651a1e309, type: 3}
       propertyPath: m_Follow
@@ -27665,11 +27669,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6821842573024422461, guid: adfd2ca1ecb59764daf5ae5651a1e309, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.48637676
+      value: 34.781876
       objectReference: {fileID: 0}
     - target: {fileID: 6821842573024422461, guid: adfd2ca1ecb59764daf5ae5651a1e309, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.769529
+      value: -4.6829185
       objectReference: {fileID: 0}
     - target: {fileID: 6821842573024422461, guid: adfd2ca1ecb59764daf5ae5651a1e309, type: 3}
       propertyPath: m_LocalPosition.z
@@ -27734,6 +27738,14 @@ PrefabInstance:
     - target: {fileID: 6821842573345010057, guid: adfd2ca1ecb59764daf5ae5651a1e309, type: 3}
       propertyPath: m_Name
       value: CameraRig
+      objectReference: {fileID: 0}
+    - target: {fileID: 6821842574179456368, guid: adfd2ca1ecb59764daf5ae5651a1e309, type: 3}
+      propertyPath: m_FollowOffset.x
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6821842574179456368, guid: adfd2ca1ecb59764daf5ae5651a1e309, type: 3}
+      propertyPath: m_FollowOffset.y
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: adfd2ca1ecb59764daf5ae5651a1e309, type: 3}
