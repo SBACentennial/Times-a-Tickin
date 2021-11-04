@@ -6,6 +6,7 @@ public class MovePlatform : MonoBehaviour
 {
 	[SerializeField] private float movingLength = 5.0f;
 	[SerializeField] private float movingSpeed = 5.0f;
+	[SerializeField] private bool isHorizontal = true;
 
 	private Rigidbody2D rbPlatform;
 	private Vector2 defaultPosition;
@@ -18,6 +19,10 @@ public class MovePlatform : MonoBehaviour
 
 	void FixedUpdate()
 	{
-		transform.position = new Vector2(defaultPosition.x + Mathf.PingPong(Time.time * movingSpeed, movingLength), defaultPosition.y);
+		if (isHorizontal) {
+			transform.position = new Vector2(defaultPosition.x + Mathf.PingPong(Time.time * movingSpeed, movingLength), defaultPosition.y);
+		} else {
+			transform.position = new Vector2(defaultPosition.x, defaultPosition.y + Mathf.PingPong(Time.time * movingSpeed, movingLength));
+		}
 	}
 }
