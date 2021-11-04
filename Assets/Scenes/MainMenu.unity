@@ -632,7 +632,7 @@ GameObject:
   - component: {fileID: 835653614}
   - component: {fileID: 835653613}
   m_Layer: 0
-  m_Name: The last wish
+  m_Name: MainMenuMusic
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1696,7 +1696,7 @@ GameObject:
   - component: {fileID: 1660190211}
   - component: {fileID: 1660190210}
   m_Layer: 0
-  m_Name: ClockOutside
+  m_Name: Clock
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
