@@ -364,7 +364,7 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 0
+  m_PresetInfoIsWorld: 1
 --- !u!223 &138699212
 Canvas:
   m_ObjectHideFlags: 0
@@ -374,7 +374,7 @@ Canvas:
   m_GameObject: {fileID: 138699207}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 1
+  m_RenderMode: 2
   m_Camera: {fileID: 1648131059}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
@@ -394,8 +394,8 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 138699207}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 90}
+  m_LocalScale: {x: 0.010141988, y: 0.010141988, z: 0.010141988}
   m_Children:
   - {fileID: 464828976}
   - {fileID: 1401204754}
@@ -406,8 +406,8 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0, y: 0}
+  m_SizeDelta: {x: 2046.9999, y: 985.99994}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &164093962
 GameObject:
   m_ObjectHideFlags: 0
@@ -1062,7 +1062,7 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 0
+  m_PresetInfoIsWorld: 1
 --- !u!223 &877709933
 Canvas:
   m_ObjectHideFlags: 0
@@ -1072,7 +1072,7 @@ Canvas:
   m_GameObject: {fileID: 877709930}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 1
+  m_RenderMode: 2
   m_Camera: {fileID: 1648131059}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
@@ -1092,8 +1092,8 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 877709930}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 90}
+  m_LocalScale: {x: 0.010141988, y: 0.010141988, z: 0.010141988}
   m_Children:
   - {fileID: 1811835407}
   - {fileID: 2015998636}
@@ -1103,8 +1103,8 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0, y: 0}
+  m_SizeDelta: {x: 2046.9999, y: 985.99994}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &982265653
 GameObject:
   m_ObjectHideFlags: 0
@@ -2463,8 +2463,8 @@ Tilemap:
   - first: {x: -8, y: -5, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 0
-      m_TileSpriteIndex: 0
+      m_TileIndex: 3
+      m_TileSpriteIndex: 3
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -2613,8 +2613,8 @@ Tilemap:
   - first: {x: 7, y: -5, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 0
-      m_TileSpriteIndex: 0
+      m_TileIndex: 4
+      m_TileSpriteIndex: 4
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -2932,15 +2932,15 @@ Tilemap:
       m_AllTileFlags: 1073741825
   m_AnimatedTiles: {}
   m_TileAssetArray:
-  - m_RefCount: 16
+  - m_RefCount: 14
     m_Data: {fileID: 11400000, guid: cc82f1194e569c34a8a64b593cdbfb43, type: 2}
   - m_RefCount: 2
     m_Data: {fileID: 11400000, guid: 8a3ce0c0a1359c64ebf83bd35567cb36, type: 2}
   - m_RefCount: 2
     m_Data: {fileID: 11400000, guid: d5372b87b69e5c14fb5e452e86779683, type: 2}
-  - m_RefCount: 4
+  - m_RefCount: 5
     m_Data: {fileID: 11400000, guid: 014748df18ad04f4fb8422f9293f6350, type: 2}
-  - m_RefCount: 4
+  - m_RefCount: 5
     m_Data: {fileID: 11400000, guid: e2cdde0dabd8bc54996a83180da6c62c, type: 2}
   - m_RefCount: 2
     m_Data: {fileID: 11400000, guid: a780a36847aa30b4a992a8e611e497cc, type: 2}
@@ -2949,15 +2949,15 @@ Tilemap:
   - m_RefCount: 16
     m_Data: {fileID: 11400000, guid: 76c66ed3aecb33f47afa3bd0681d899e, type: 2}
   m_TileSpriteArray:
-  - m_RefCount: 16
+  - m_RefCount: 14
     m_Data: {fileID: 21300000, guid: c527c1321093fd041a0f3495e66b5e88, type: 3}
   - m_RefCount: 2
     m_Data: {fileID: 21300000, guid: 9b218a7dcd0522a44a17f018d97f8bd9, type: 3}
   - m_RefCount: 2
     m_Data: {fileID: 21300000, guid: 3492a978b76d90f459412a4e426fb7f8, type: 3}
-  - m_RefCount: 4
+  - m_RefCount: 5
     m_Data: {fileID: 21300000, guid: cee8f9908229bc94da5704057a3b876e, type: 3}
-  - m_RefCount: 4
+  - m_RefCount: 5
     m_Data: {fileID: 21300000, guid: bd6de1f7ce3938f4d99a17a47cf6c8b6, type: 3}
   - m_RefCount: 2
     m_Data: {fileID: 21300000, guid: 0d0b98b0bfe72dd46921c570ae96515d, type: 3}
@@ -3063,7 +3063,25 @@ CompositeCollider2D:
         Y: 20000000
       - X: -89843752
         Y: 20000000
-    - - X: 90000000
+    - - X: -69999900
+        Y: -50000041
+      - X: -69999900
+        Y: -50000000
+      - X: 69999900
+        Y: -50000000
+      - X: 69999900
+        Y: -50000041
+      - X: 69999959
+        Y: -50000100
+      - X: 80000041
+        Y: -50000100
+      - X: 80000100
+        Y: -50000041
+      - X: 80000100
+        Y: -50000000
+      - X: 90000000
+        Y: -50000000
+      - X: 90000000
         Y: -20000000
       - X: 89843752
         Y: -20000000
@@ -3076,9 +3094,21 @@ CompositeCollider2D:
       - X: 70000000
         Y: -39843752
       - X: 70000000
+        Y: -39999900
+      - X: 69999959
+        Y: -39999900
+      - X: 69999900
+        Y: -39999959
+      - X: 69999900
         Y: -40000000
-      - X: -70078128
+      - X: -69999900
         Y: -40000000
+      - X: -69999900
+        Y: -39999959
+      - X: -69999959
+        Y: -39999900
+      - X: -70078028
+        Y: -39999900
       - X: -70000000
         Y: -39921876
       - X: -70000000
@@ -3097,8 +3127,14 @@ CompositeCollider2D:
         Y: -20000000
       - X: -90000000
         Y: -50000000
-      - X: 90000000
+      - X: -80000100
         Y: -50000000
+      - X: -80000100
+        Y: -50000041
+      - X: -80000041
+        Y: -50000100
+      - X: -69999959
+        Y: -50000100
   m_CompositePaths:
     m_Paths:
     - - {x: -8.9843855, y: 2}
@@ -3124,8 +3160,8 @@ CompositeCollider2D:
       - {x: 7.9999704, y: -3}
       - {x: 7.9843683, y: -3.0000076}
       - {x: 7, y: -3.984386}
-      - {x: 6.9999704, y: -4}
-      - {x: -7.0077515, y: -3.9999385}
+      - {x: 6.999961, y: -4}
+      - {x: -7.007741, y: -3.9999285}
       - {x: -7, y: -3.9921768}
       - {x: -7.000007, y: -3.9843676}
       - {x: -7.976573, y: -3}
@@ -3208,7 +3244,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 126.8}
+  m_AnchoredPosition: {x: 0, y: 160}
   m_SizeDelta: {x: 1000, y: 240}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1811835408
