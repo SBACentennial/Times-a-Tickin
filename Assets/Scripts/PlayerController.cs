@@ -19,7 +19,7 @@ public class PlayerController : MonoBehaviour
     // Private Variables
     private Rigidbody2D rBody;
     private bool isGrounded = false;
-    private bool isFacingRight = true;
+    public bool isFacingRight = true;
     // Start is called before the first frame update
     void Start()
     {
@@ -56,10 +56,6 @@ public class PlayerController : MonoBehaviour
         anim.SetFloat("xVelocity", Mathf.Abs(rBody.velocity.x));
         anim.SetFloat("yVelocity", rBody.velocity.y);
         anim.SetBool("isGrounded", isGrounded);
-        
-
-
-
     }
 
     private bool GroundCheck()

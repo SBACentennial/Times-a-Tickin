@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class EnemyWalkerScript : MonoBehaviour
 {
+    public int health = 1;
     public float speed = 2f;
     public Rigidbody2D rb;
     public LayerMask groundLayers;
@@ -47,5 +48,20 @@ public class EnemyWalkerScript : MonoBehaviour
         {
             timerScript.isSpikes = true;
         }
+    }
+
+    public void TakeDamage (int damage)
+    {
+        health -= damage;
+
+        if (health <= 0)
+        {
+            Die();
+        }
+    }
+
+    void Die()
+    {
+        Destroy(gameObject);
     }
 }
