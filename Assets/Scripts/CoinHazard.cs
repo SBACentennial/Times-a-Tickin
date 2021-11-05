@@ -34,7 +34,7 @@ public class CoinHazard : MonoBehaviour
         Timer timeControllerScript = timeController.GetComponent<Timer>();
         if (other.CompareTag("Player"))
         {
-            AudioSource.PlayClipAtPoint(coinGood, transform.position, 0.5f);
+            AudioSource.PlayClipAtPoint(coinGood, transform.position, 1f);
             timeControllerScript.hazard = true;
             Destroy(gameObject);
         }

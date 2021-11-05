@@ -1013,6 +1013,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 3907716709813140037, guid: b29d77d9e3923c545b256df3e6a54a34, type: 3}
+      propertyPath: hurtSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 6430aba1cc674e24bbf6e4f1b28c3d19, type: 3}
+    - target: {fileID: 3907716709813140037, guid: b29d77d9e3923c545b256df3e6a54a34, type: 3}
+      propertyPath: jumpSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 1955f8cba51da284a9c0bf49abba1576, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b29d77d9e3923c545b256df3e6a54a34, type: 3}
 --- !u!1001 &842831378
@@ -15041,7 +15049,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6821842572278536800, guid: adfd2ca1ecb59764daf5ae5651a1e309, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -8.778918
+      value: -9.778918
       objectReference: {fileID: 0}
     - target: {fileID: 6821842572278536801, guid: adfd2ca1ecb59764daf5ae5651a1e309, type: 3}
       propertyPath: m_Follow
@@ -15053,7 +15061,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6821842573024422461, guid: adfd2ca1ecb59764daf5ae5651a1e309, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -8.778918
+      value: -9.778918
       objectReference: {fileID: 0}
     - target: {fileID: 6821842573345010056, guid: adfd2ca1ecb59764daf5ae5651a1e309, type: 3}
       propertyPath: m_RootOrder

@@ -6,6 +6,7 @@ public class Door1Script : MonoBehaviour
 {
     private Animator anim;
     private bool isExit = false;
+    public AudioClip doorSound;
 
     
     void Start()
@@ -17,6 +18,7 @@ public class Door1Script : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
+            AudioSource.PlayClipAtPoint(doorSound, transform.position, 1f);
             isExit = true;            
         }
 

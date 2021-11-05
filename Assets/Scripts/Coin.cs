@@ -11,7 +11,7 @@ public class Coin : MonoBehaviour
         Timer timeControllerScript = timeController.GetComponent<Timer>();
         if (other.CompareTag("Player"))
         {
-            AudioSource.PlayClipAtPoint(coinGood, transform.position, 0.5f);
+            AudioSource.PlayClipAtPoint(coinGood, transform.position, 0.7f);
             timeControllerScript.powerUp = true;
             Destroy(gameObject);
         }

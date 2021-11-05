@@ -11,6 +11,9 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private Transform groundCheckPos;
     [SerializeField] private LayerMask whatIsGround;
     private Animator anim;
+    public AudioClip jumpSound;
+    public AudioClip hurtSound;
+    private bool isHurt = false;
 
 
     // Private Variables
@@ -33,6 +36,7 @@ public class PlayerController : MonoBehaviour
         // Jump code goes here
         if (isGrounded && Input.GetAxis("Jump") > 0)
         {
+            AudioSource.PlayClipAtPoint(jumpSound, transform.position, 1f);
             rBody.AddForce(new Vector2(0.0f, jumpForce));
             isGrounded = false;
         }
@@ -52,9 +56,10 @@ public class PlayerController : MonoBehaviour
         anim.SetFloat("xVelocity", Mathf.Abs(rBody.velocity.x));
         anim.SetFloat("yVelocity", rBody.velocity.y);
         anim.SetBool("isGrounded", isGrounded);
-
-
         
+
+
+
     }
 
     private bool GroundCheck()
@@ -73,7 +78,18 @@ public class PlayerController : MonoBehaviour
 		if (transform.parent == null && other.gameObject.tag == "FallingPlatform") {
 			transform.SetParent(other.transform);
 		}
-	}
+
+        if (other.gameObject.tag == "Hazard")
+        {
+            
+            isHurt = true;
+            Invoke("resetHurt", 0f);
+            Debug.Log("You are hurt");
+            AudioSource.PlayClipAtPoint(hurtSound, transform.position, 1f);
+        }
+       
+        anim.SetBool("isHurt", isHurt);
+    }
 
 	private void OnCollisionExit2D(Collision2D other) {
 		// check if player is NOT on the moving floor
@@ -94,5 +110,10 @@ public class PlayerController : MonoBehaviour
         transform.localScale = temp;
 
         isFacingRight = !isFacingRight;
+    }
+
+    void resetHurt()
+    {
+        isHurt = false;
     }
 }
