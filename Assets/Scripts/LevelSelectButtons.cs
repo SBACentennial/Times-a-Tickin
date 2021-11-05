@@ -3,16 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class MainMenu : MonoBehaviour
+public class LevelSelectButtons : MonoBehaviour
 {
-    public void PlayAgain()
+    public void MainMenu()
     {
-        SceneManager.LoadScene(1);
-    }
-
-    public void LevelSelect()
-    {
-        SceneManager.LoadScene(5);
+        SceneManager.LoadScene(0);
     }
 
     public void QuitGame()
