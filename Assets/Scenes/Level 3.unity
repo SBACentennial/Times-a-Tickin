@@ -15055,6 +15055,10 @@ PrefabInstance:
       propertyPath: m_Follow
       value: 
       objectReference: {fileID: 1158012953}
+    - target: {fileID: 6821842573024422460, guid: adfd2ca1ecb59764daf5ae5651a1e309, type: 3}
+      propertyPath: m_UpdateMethod
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6821842573024422461, guid: adfd2ca1ecb59764daf5ae5651a1e309, type: 3}
       propertyPath: m_LocalPosition.x
       value: 5.2718744
