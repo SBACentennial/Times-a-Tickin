@@ -25170,13 +25170,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlayerCam
       objectReference: {fileID: 0}
+    - target: {fileID: 6821842573024422460, guid: adfd2ca1ecb59764daf5ae5651a1e309, type: 3}
+      propertyPath: m_UpdateMethod
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6821842573024422461, guid: adfd2ca1ecb59764daf5ae5651a1e309, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.138836
+      value: -6.4266834
       objectReference: {fileID: 0}
     - target: {fileID: 6821842573024422461, guid: adfd2ca1ecb59764daf5ae5651a1e309, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -5.236617
+      value: -5.345014
       objectReference: {fileID: 0}
     - target: {fileID: 6821842573024422461, guid: adfd2ca1ecb59764daf5ae5651a1e309, type: 3}
       propertyPath: m_LocalPosition.z
