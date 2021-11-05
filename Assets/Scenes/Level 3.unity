@@ -14250,6 +14250,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 8300000, guid: 5e7cedb497319284c83846fcdd953aef, type: 3}
     - target: {fileID: 4249562064075085867, guid: 3fb3105a81af4624993fc3121c962d66, type: 3}
+      propertyPath: bounceForce
+      value: 2000
+      objectReference: {fileID: 0}
+    - target: {fileID: 4249562064075085867, guid: 3fb3105a81af4624993fc3121c962d66, type: 3}
       propertyPath: trampolineAnim
       value: 
       objectReference: {fileID: 1878937513}
@@ -14267,7 +14271,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4249562064075085870, guid: 3fb3105a81af4624993fc3121c962d66, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.018000286
+      value: -0.325
       objectReference: {fileID: 0}
     - target: {fileID: 4249562064075085870, guid: 3fb3105a81af4624993fc3121c962d66, type: 3}
       propertyPath: m_LocalPosition.y
@@ -15243,7 +15247,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 59996735934394003, guid: 17191ee243b867b4696b414776602d0f, type: 3}
       propertyPath: speed
-      value: 2
+      value: 2.5
       objectReference: {fileID: 0}
     - target: {fileID: 59996735934394013, guid: 17191ee243b867b4696b414776602d0f, type: 3}
       propertyPath: m_Color.b
@@ -15324,7 +15328,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 18467600744826782, guid: 88d328292a40bd447abb58b664850e80, type: 3}
       propertyPath: movingSpeed
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 18467600744826782, guid: 88d328292a40bd447abb58b664850e80, type: 3}
       propertyPath: isHorizontal
