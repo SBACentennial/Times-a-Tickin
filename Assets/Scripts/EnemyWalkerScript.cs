@@ -69,7 +69,6 @@ public class EnemyWalkerScript : MonoBehaviour
         Destroy(gameObject);
 
         dropChance = Random.Range(1f, 5f);
-        Debug.Log(dropChance);
 
         if(dropChance >= 1f && dropChance <= 2f)
         {

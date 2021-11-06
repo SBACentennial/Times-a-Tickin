@@ -28,12 +28,18 @@ public class Bullet : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         EnemyWalkerScript enemy = collision.GetComponent<EnemyWalkerScript>();
+        Coin coin = collision.GetComponent<Coin>();
+        CoinHazard coinhaz = collision.GetComponent<CoinHazard>();
+        SawMovement saw = collision.GetComponent<SawMovement>();
 
         if(enemy != null)
         {
             enemy.TakeDamage(dmg);
         }
 
-        Destroy(gameObject);
+        if(!coin && !coinhaz && !saw)
+        {
+            Destroy(gameObject);
+        }
     }
 }
