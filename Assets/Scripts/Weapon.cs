@@ -8,6 +8,7 @@ public class Weapon : MonoBehaviour
 
     public Transform firePoint;
     public GameObject bulletPrefab;
+    public GameObject firingPrefab;
 
     // Update is called once per frame
     void Update()
@@ -26,6 +27,17 @@ public class Weapon : MonoBehaviour
 
     void Shoot()
     {
-        Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
+        GameObject player = GameObject.Find("Player");
+        PlayerController playerScript = player.GetComponent<PlayerController>();
+        if (playerScript.isFacingRight)
+        {
+            Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
+            Instantiate(firingPrefab, firePoint.position, firePoint.rotation);
+        }
+        else if (!(playerScript.isFacingRight))
+        {
+            Instantiate(bulletPrefab, firePoint.position, firePoint.rotation * Quaternion.Euler(0, 180, 0));
+            Instantiate(firingPrefab, firePoint.position, firePoint.rotation * Quaternion.Euler(0, 180, 0));
+        }
     }
 }
