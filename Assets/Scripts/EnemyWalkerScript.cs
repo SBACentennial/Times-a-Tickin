@@ -5,9 +5,13 @@ using UnityEngine;
 public class EnemyWalkerScript : MonoBehaviour
 {
     public int health = 1;
+    private float dropChance = 0f;
     public float speed = 2f;
     public Rigidbody2D rb;
     public LayerMask groundLayers;
+    public GameObject coinPowerUpPrefab;
+    public GameObject coinHazPrefab;
+    public Transform enemy;
 
     public Transform groundCheck;
 
@@ -63,5 +67,21 @@ public class EnemyWalkerScript : MonoBehaviour
     void Die()
     {
         Destroy(gameObject);
+
+        dropChance = Random.Range(1f, 5f);
+        Debug.Log(dropChance);
+
+        if(dropChance >= 1f && dropChance <= 2f)
+        {
+            
+        }
+        else if(dropChance > 2f && dropChance <= 4f)
+        {
+            Instantiate(coinPowerUpPrefab, enemy.position, enemy.rotation);
+        }
+        else if (dropChance > 4f && dropChance <= 5f)
+        {
+            Instantiate(coinHazPrefab, enemy.position, enemy.rotation);
+        }
     }
 }

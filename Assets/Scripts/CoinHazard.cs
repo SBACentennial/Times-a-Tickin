@@ -7,7 +7,7 @@ public class CoinHazard : MonoBehaviour
     public SpriteRenderer spriteRenderer;
     [SerializeField] private Color newColor = Color.red;
 
-    [SerializeField] private float timer = 2;
+    [SerializeField] private float timer = 1;
     public AudioClip coinGood;
 
     private void Start()

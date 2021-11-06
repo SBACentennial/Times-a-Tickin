@@ -119,11 +119,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 94b398066131e3e4382ff46767e26a70, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  health: 1
   speed: 2
   rb: {fileID: 3842003151233526852}
   groundLayers:
     serializedVersion: 2
     m_Bits: 1024
+  coinPowerUpPrefab: {fileID: 8589897292016642714, guid: 0ce80fd90afe3f143bedd49139ff99c8, type: 3}
+  coinHazPrefab: {fileID: 3003012341340899716, guid: 9629fc0b75bc725479b91257acd7df65, type: 3}
+  enemy: {fileID: 3842003151233526849}
   groundCheck: {fileID: 3842003151627299365}
 --- !u!50 &3842003151233526852
 Rigidbody2D:

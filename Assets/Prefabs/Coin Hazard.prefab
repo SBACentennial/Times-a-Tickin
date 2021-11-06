@@ -115,7 +115,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spriteRenderer: {fileID: 3003012341340899713}
   newColor: {r: 0.7735849, g: 0.23718406, b: 0.23718406, a: 1}
-  timer: 2
+  timer: 0.5
   coinGood: {fileID: 8300000, guid: 26ac11b781b15524296c6c8df1d47ed0, type: 3}
 --- !u!95 &3003012341340899715
 Animator:
