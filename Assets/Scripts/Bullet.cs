@@ -24,10 +24,16 @@ public class Bullet : MonoBehaviour
         Coin coin = collision.GetComponent<Coin>();
         CoinHazard coinhaz = collision.GetComponent<CoinHazard>();
         SawMovement saw = collision.GetComponent<SawMovement>();
+        Crates crate = collision.GetComponent<Crates>();
 
         if(enemy != null)
         {
             enemy.TakeDamage(dmg);
+        }
+
+        if(crate != null)
+        {
+            crate.TakeDamage(dmg);
         }
 
         if(!coin && !coinhaz && !saw)

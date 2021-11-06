@@ -12,6 +12,15 @@ public class Firing : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        rBody.velocity = transform.right * speed;
+        GameObject player = GameObject.Find("Player");
+        PlayerController playerScript = GetComponent<PlayerController>();
+        if(player.GetComponent<Rigidbody2D>().velocity.x != 0)
+        {
+            rBody.velocity = transform.right * speed;
+        }
+        else
+        {
+            rBody.velocity = transform.right;
+        }
     }
 }
