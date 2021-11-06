@@ -9,7 +9,14 @@ public class Weapon : MonoBehaviour
     public Transform firePoint;
     public GameObject bulletPrefab;
     public GameObject firingPrefab;
+    private bool isShooting = false;
+    private Animator anim;
+    public AudioClip shootSound;
 
+    private void Start()
+    {
+        anim = GetComponent<Animator>();
+    }
     // Update is called once per frame
     void Update()
     {
@@ -19,10 +26,14 @@ public class Weapon : MonoBehaviour
         {
             if (Input.GetButtonDown("Fire1"))
             {
+                isShooting = true;
+                AudioSource.PlayClipAtPoint(shootSound, transform.position, 1f);
                 Shoot();
+                Invoke("RestartShoot", 0.4f);
                 timer = 2f;
             }
         }
+        anim.SetBool("isShooting", isShooting);
     }
 
     void Shoot()
@@ -39,5 +50,10 @@ public class Weapon : MonoBehaviour
             Instantiate(bulletPrefab, firePoint.position, firePoint.rotation * Quaternion.Euler(0, 180, 0));
             Instantiate(firingPrefab, firePoint.position, firePoint.rotation * Quaternion.Euler(0, 180, 0));
         }
+    }
+
+    void RestartShoot()
+    {
+        isShooting = false;
     }
 }
