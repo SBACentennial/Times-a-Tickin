@@ -16,16 +16,6 @@ public class Bullet : MonoBehaviour
         PlayerController playerScript = player.GetComponent<PlayerController>();
 
         rBody.velocity = transform.right * speed;
-        /*
-        if (playerScript.isFacingRight)
-        {
-            rBody.velocity = transform.right * speed;
-        }
-        else if (!(playerScript.isFacingRight))
-        {
-            rBody.velocity = transform.right * -speed;
-        }
-        */
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
