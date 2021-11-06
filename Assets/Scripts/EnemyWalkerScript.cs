@@ -12,6 +12,7 @@ public class EnemyWalkerScript : MonoBehaviour
     public GameObject coinPowerUpPrefab;
     public GameObject coinHazPrefab;
     public Transform enemy;
+    public GameObject enemyDeath;
 
     public Transform groundCheck;
 
@@ -82,5 +83,7 @@ public class EnemyWalkerScript : MonoBehaviour
         {
             Instantiate(coinHazPrefab, enemy.position, enemy.rotation);
         }
+
+        Instantiate(enemyDeath, enemy.position, enemy.rotation);
     }
 }
