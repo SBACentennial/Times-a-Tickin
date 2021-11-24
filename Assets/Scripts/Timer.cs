@@ -17,6 +17,7 @@ public class Timer : MonoBehaviour
 
     //spikes
     public bool isSpikes = false;
+	public bool isExplosion = false;
 
 
     //current time
@@ -102,6 +103,11 @@ public class Timer : MonoBehaviour
                 //}
             }
 
+            else if (isExplosion == true)
+            {
+                currentTime -= 50;
+                isExplosion = false;
+            }
 
                 currentTime -= 1 * Time.deltaTime;
                 timerText.text = currentTime.ToString("00") + "s";

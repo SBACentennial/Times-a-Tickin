@@ -109,6 +109,19 @@ public class PlayerController : MonoBehaviour
 		}
 	}
 
+	private void OnTriggerEnter2D(Collider2D other) {
+        if (other.gameObject.tag == "Hazard")
+        {
+            
+            isHurt = true;
+            Invoke("resetHurt", 0f);
+            Debug.Log("You are hurt");
+            AudioSource.PlayClipAtPoint(hurtSound, transform.position, 1f);
+        }
+       
+        anim.SetBool("isHurt", isHurt);
+	}
+
     private void Flip()
     {
         Vector3 temp = transform.localScale;

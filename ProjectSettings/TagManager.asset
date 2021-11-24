@@ -8,6 +8,7 @@ TagManager:
   - MovingPlatform
   - FallingPlatform
   - Hazard
+  - Bullet
   layers:
   - Default
   - TransparentFX
