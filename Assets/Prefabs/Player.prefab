@@ -208,6 +208,8 @@ MonoBehaviour:
     m_Bits: 1024
   jumpSound: {fileID: 0}
   hurtSound: {fileID: 0}
+  hitFeedback: {fileID: 7760138712456268669, guid: 140659f9440c6e343ae75b8efef31e60, type: 3}
+  isFacingRight: 1
 --- !u!114 &3907716709813140034
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -254,3 +256,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   firePoint: {fileID: 8126532269137102595}
   bulletPrefab: {fileID: 282867706598424015, guid: 49e3e252c8baa5f4ca805be2f0fa6ce5, type: 3}
+  firingPrefab: {fileID: 0}
+  shootSound: {fileID: 0}

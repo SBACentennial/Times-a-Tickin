@@ -113,6 +113,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 401fe12cbe8954f43b643a9640786e9f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  itemFeedback: {fileID: 6932797322301435133, guid: 3ff0527cee9ced14b85536ee1835184c, type: 3}
   coinGood: {fileID: 8300000, guid: 8428b76c2efb18d4c9c968edb9d6d3a4, type: 3}
 --- !u!95 &8589897292016642705
 Animator:

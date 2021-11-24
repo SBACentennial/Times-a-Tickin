@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class CoinHazard : MonoBehaviour
 {
+    [SerializeField] private GameObject itemFeedback;
     public SpriteRenderer spriteRenderer;
     [SerializeField] private Color newColor = Color.red;
 
@@ -34,6 +35,7 @@ public class CoinHazard : MonoBehaviour
         Timer timeControllerScript = timeController.GetComponent<Timer>();
         if (other.CompareTag("Player"))
         {
+            GameObject.Instantiate(itemFeedback, this.transform.position, this.transform.rotation);
             AudioSource.PlayClipAtPoint(coinGood, transform.position, 1f);
             timeControllerScript.hazard = true;
             Destroy(gameObject);

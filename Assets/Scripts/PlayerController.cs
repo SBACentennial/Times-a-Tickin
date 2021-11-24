@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerController : MonoBehaviour
 {
@@ -15,6 +16,13 @@ public class PlayerController : MonoBehaviour
     public AudioClip hurtSound;
     private bool isHurt = false;
 
+
+    //minus time indicator
+    [SerializeField] private GameObject hitFeedback;
+
+
+
+    
 
     // Private Variables
     private Rigidbody2D rBody;
@@ -77,7 +85,9 @@ public class PlayerController : MonoBehaviour
 
         if (other.gameObject.tag == "Hazard")
         {
-            
+            //displays minus time indicator when the player is hit
+            GameObject.Instantiate(hitFeedback, new Vector2(this.transform.position.x, this.transform.position.y +2), this.transform.rotation);
+
             isHurt = true;
             Invoke("resetHurt", 0f);
             Debug.Log("You are hurt");
