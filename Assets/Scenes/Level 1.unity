@@ -24448,6 +24448,32 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 3907716709813140036, guid: b29d77d9e3923c545b256df3e6a54a34, type: 3}
   m_PrefabInstance: {fileID: 3907716709276329628}
   m_PrefabAsset: {fileID: 0}
+--- !u!61 &1610816729
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1610816728}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.0619874, y: 0.27148128}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.35, y: 0.48}
+    oldSize: {x: 6.15, y: 5.37}
+    newSize: {x: 6.15, y: 5.37}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2.0245314, y: 4.4792733}
+  m_EdgeRadius: 0
 --- !u!50 &1610816730 stripped
 Rigidbody2D:
   m_CorrespondingSourceObject: {fileID: 3907716709813140038, guid: b29d77d9e3923c545b256df3e6a54a34, type: 3}
@@ -27133,6 +27159,10 @@ PrefabInstance:
       propertyPath: jumpSound
       value: 
       objectReference: {fileID: 8300000, guid: 1955f8cba51da284a9c0bf49abba1576, type: 3}
+    - target: {fileID: 3907716709813140039, guid: b29d77d9e3923c545b256df3e6a54a34, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8126532269137102595, guid: b29d77d9e3923c545b256df3e6a54a34, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2.36
