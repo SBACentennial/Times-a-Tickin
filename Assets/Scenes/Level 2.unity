@@ -17408,6 +17408,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1297745654869907489, guid: b29d77d9e3923c545b256df3e6a54a34, type: 3}
+      propertyPath: shootSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 62f0467ec6a8c584e899cabd70aa8a34, type: 3}
+    - target: {fileID: 1297745654869907489, guid: b29d77d9e3923c545b256df3e6a54a34, type: 3}
+      propertyPath: firingPrefab
+      value: 
+      objectReference: {fileID: 1045716125073545888, guid: 768165fc411a4934d953ae9cacffd186, type: 3}
     - target: {fileID: 3907716709813140033, guid: b29d77d9e3923c545b256df3e6a54a34, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -25433,7 +25441,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6821842572278536800, guid: adfd2ca1ecb59764daf5ae5651a1e309, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -6.4281263
+      value: -11.428126
       objectReference: {fileID: 0}
     - target: {fileID: 6821842572278536800, guid: adfd2ca1ecb59764daf5ae5651a1e309, type: 3}
       propertyPath: m_LocalPosition.y
@@ -25453,7 +25461,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6821842573024422461, guid: adfd2ca1ecb59764daf5ae5651a1e309, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -6.4281263
+      value: -11.428126
       objectReference: {fileID: 0}
     - target: {fileID: 6821842573024422461, guid: adfd2ca1ecb59764daf5ae5651a1e309, type: 3}
       propertyPath: m_LocalPosition.y
@@ -25526,6 +25534,10 @@ PrefabInstance:
     - target: {fileID: 6821842573345010057, guid: adfd2ca1ecb59764daf5ae5651a1e309, type: 3}
       propertyPath: m_Name
       value: CameraRig
+      objectReference: {fileID: 0}
+    - target: {fileID: 6821842574179456368, guid: adfd2ca1ecb59764daf5ae5651a1e309, type: 3}
+      propertyPath: m_FollowOffset.x
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: adfd2ca1ecb59764daf5ae5651a1e309, type: 3}
