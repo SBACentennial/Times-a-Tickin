@@ -192,12 +192,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44b23b0f15377b44a81f10bae875c80b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerRb: {fileID: 286232939561056315, guid: daf28bb8e35da974ab7d2b0dda28507a, type: 3}
   totalTime: 120
   powerUp: 0
   hazard: 0
   isSpikes: 0
   isExplosion: 0
   currentTime: 0
-  spikesText: {fileID: 0}
-  badCoinText: {fileID: 0}
-  goodCoinText: {fileID: 0}

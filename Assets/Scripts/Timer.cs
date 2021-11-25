@@ -6,6 +6,12 @@ using UnityEngine.SceneManagement;
 
 public class Timer : MonoBehaviour
 {
+
+    //to see if player fell
+    [SerializeField] private Rigidbody2D playerRb;
+
+
+
     //Time is set at the begining of each level. 
     //This is set in the Unity Scene window
     [SerializeField] private float totalTime;
@@ -27,19 +33,10 @@ public class Timer : MonoBehaviour
     //main timer text to be displayed on screen
     private Text timerText;
 
-    //spike text
-    [SerializeField] private Text spikesText;
-
-    //bad coin text
-    [SerializeField] private Text badCoinText;
-
-    //good coin text
-    [SerializeField] private Text goodCoinText;
-
-
     // Start is called before the first frame update
     void Start()
     {
+        playerRb.GetComponent<Rigidbody2D>();
         timerText = GetComponent<Text>();
         currentTime = totalTime;
     }
@@ -47,6 +44,12 @@ public class Timer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (playerRb.transform.position.y <= -20)
+        {
+            currentTime -= 30;
+            if (currentTime >= 0)
+                Respawn();
+        }
 
         if (currentTime >= 0)
         {
@@ -54,53 +57,18 @@ public class Timer : MonoBehaviour
             {
                 currentTime += 10;
                 powerUp = false;
-                //goodCoinText.enabled = true;
-
-                //float startTime = currentTime;
-
-                //if (goodCoinText.enabled == true)
-                //{
-
-                //    if (startTime - currentTime <= 3)
-                //    {
-                //        goodCoinText.enabled = false;
-                //    }
-                //}
             }
 
             else if (hazard == true)
             {
                 currentTime -= 10;
-                hazard = false;
-                //badCoinText.enabled = true;
-
-                //float startTime = currentTime;
-
-                //if (badCoinText.enabled == true)
-                //{
-
-                //    if (startTime - currentTime <= 3)
-                //    {
-                //        badCoinText.enabled = false;
-                //    }
-                //}
+                hazard = false;                
             }
 
             else if (isSpikes == true)
             {
                 currentTime -= 30;
                 isSpikes = false;
-                //spikesText.enabled = true;
-
-                //float maxTime = 2;
-                //maxTime -= 1 * Time.deltaTime;
-                //if (spikesText.enabled == true)
-                //{
-                //    if (maxTime <= 0)
-                //    {
-                //        spikesText.enabled = false;
-                //    }
-                //}
             }
 
             else if (isExplosion == true)
@@ -119,9 +87,16 @@ public class Timer : MonoBehaviour
                 GameOver();
             }
         }
+
     private static void GameOver()
     {
         SceneManager.LoadScene("GameOver");
+    }
+
+    private static void Respawn()
+    {
+            int activeScene = SceneManager.GetActiveScene().buildIndex;
+            SceneManager.LoadScene(activeScene);      
     }
 }
 
