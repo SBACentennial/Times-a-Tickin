@@ -28,6 +28,7 @@ public class PlayerController : MonoBehaviour
     private Rigidbody2D rBody;
     private bool isGrounded = false;
     public bool isFacingRight = true;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -59,7 +60,6 @@ public class PlayerController : MonoBehaviour
         {
             Flip();
         }
-
 
         anim.SetFloat("xVelocity", Mathf.Abs(rBody.velocity.x));
         anim.SetFloat("yVelocity", rBody.velocity.y);
