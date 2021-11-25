@@ -10,6 +10,9 @@ TagManager:
   - Hazard
   - Bullet
   - FlippingPlatform
+  - Platform
+  - Crate
+  - Trigger
   layers:
   - Default
   - TransparentFX

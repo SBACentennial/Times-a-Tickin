@@ -25,8 +25,10 @@ public class Bullet : MonoBehaviour
         CoinHazard coinhaz = collision.GetComponent<CoinHazard>();
         SawMovement saw = collision.GetComponent<SawMovement>();
         Crates crate = collision.GetComponent<Crates>();
+        GrenadeScript grenade = collision.GetComponent<GrenadeScript>();
+        BossScript boss = collision.GetComponent<BossScript>();
 
-        if(enemy != null)
+        if (enemy != null)
         {
             enemy.TakeDamage(dmg);
         }
@@ -36,7 +38,17 @@ public class Bullet : MonoBehaviour
             crate.TakeDamage(dmg);
         }
 
-        if(!coin && !coinhaz && !saw)
+        if (grenade != null)
+        {
+            grenade.TakeDamage(dmg);
+        }
+
+        if (boss != null)
+        {
+            boss.TakeDamageBoss(dmg);
+        }
+
+        if (!coin && !coinhaz && !saw)
         {
             Destroy(gameObject);
         }
