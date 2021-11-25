@@ -27416,7 +27416,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 8079304794968138386, guid: 7b19f8f933c896f48a7b41304d7b2d49, type: 3}
       propertyPath: m_Name
-      value: Canvas
+      value: Timer
       objectReference: {fileID: 0}
     - target: {fileID: 8079304794968138389, guid: 7b19f8f933c896f48a7b41304d7b2d49, type: 3}
       propertyPath: m_Camera
@@ -27509,6 +27509,18 @@ PrefabInstance:
     - target: {fileID: 8079304794968138390, guid: 7b19f8f933c896f48a7b41304d7b2d49, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8079304795214912675, guid: 7b19f8f933c896f48a7b41304d7b2d49, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8079304795214912675, guid: 7b19f8f933c896f48a7b41304d7b2d49, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8079304795214912675, guid: 7b19f8f933c896f48a7b41304d7b2d49, type: 3}
+      propertyPath: m_Color.r
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7b19f8f933c896f48a7b41304d7b2d49, type: 3}
