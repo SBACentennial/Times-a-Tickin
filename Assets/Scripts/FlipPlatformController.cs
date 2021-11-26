@@ -8,6 +8,7 @@ public class FlipPlatformController : MonoBehaviour
 	[SerializeField] private float rotationSpeedFactor = 1.5f;
 
 	private bool isRotated = false;
+	private bool isPlayerOn = false;
 	private float rotationTimer;
 	private float minValue;
 	private float maxValue;
@@ -23,23 +24,26 @@ public class FlipPlatformController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-		// increase timer
-		rotationTimer = rotationTimer + Time.deltaTime;
+		// stop rotation during player on the platform
+		if (!isPlayerOn) {
+			// increase timer
+			rotationTimer = rotationTimer + Time.deltaTime;
 
-		if (rotationTimer >= rotationDuration) {
-			// flip
-			transform.Rotate(
-				new Vector3(
-					transform.rotation.x,
-					transform.rotation.y,
-					maxValue) * (Time.deltaTime * rotationSpeedFactor));
+			if (rotationTimer >= rotationDuration) {
+				// flip
+				transform.Rotate(
+					new Vector3(
+						transform.rotation.x,
+						transform.rotation.y,
+						maxValue) * (Time.deltaTime * rotationSpeedFactor));
 
-			if (isRotated && transform.rotation.z > 0.1f) {
-				StopRotation(minValue);
-			}
+				if (isRotated && transform.rotation.z > 0.1f) {
+					StopRotation(minValue);
+				}
 
-			if (!isRotated && transform.rotation.z < 0.0f) {
-				StopRotation(maxValue);
+				if (!isRotated && transform.rotation.z < 0.0f) {
+					StopRotation(maxValue);
+				}
 			}
 		}
     }
@@ -49,5 +53,17 @@ public class FlipPlatformController : MonoBehaviour
 		transform.eulerAngles = new Vector3(transform.rotation.x, transform.rotation.y, finalRot);
 		isRotated = !isRotated;
 		rotationTimer = 0.0f;
+	}
+
+	private void OnCollisionEnter2D(Collision2D other) {
+		if (other.gameObject.tag == "Player") {
+			isPlayerOn = true;
+		}
+	}
+
+	private void OnCollisionExit2D(Collision2D other) {
+		if (other.gameObject.tag == "Player") {
+			isPlayerOn = false;
+		}
 	}
 }
