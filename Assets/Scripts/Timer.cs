@@ -9,8 +9,7 @@ public class Timer : MonoBehaviour
 
     //to see if player fell
     [SerializeField] private Rigidbody2D playerRb;
-
-
+    [SerializeField] private GameObject hitFeedback;
 
     //Time is set at the begining of each level. 
     //This is set in the Unity Scene window
@@ -48,7 +47,26 @@ public class Timer : MonoBehaviour
         {
             currentTime -= 30;
             if (currentTime >= 0)
-                Respawn();
+            {
+                int activeScene = SceneManager.GetActiveScene().buildIndex;
+                //SceneManager.LoadScene(activeScene);      
+
+                switch (activeScene)
+                {
+                    case 1:
+                        playerRb.transform.position = new Vector2((float)-3.9, (float)-0.64);
+                        GameObject.Instantiate(hitFeedback, new Vector2(playerRb.transform.position.x, playerRb.transform.position.y + 2), playerRb.transform.rotation);
+                        break;
+                    case 3:
+                        playerRb.transform.position = new Vector2((float)-6.7, (float)-1.63);
+                        GameObject.Instantiate(hitFeedback, new Vector2(playerRb.transform.position.x, playerRb.transform.position.y + 2), playerRb.transform.rotation);
+                        break;
+                    case 4:
+                        playerRb.transform.position = new Vector2((float)-1.46, (float)-5.05);
+                        GameObject.Instantiate(hitFeedback, new Vector2(playerRb.transform.position.x, playerRb.transform.position.y + 2), playerRb.transform.rotation);
+                        break;
+                }
+            }
         }
 
         if (currentTime >= 0)
@@ -91,12 +109,6 @@ public class Timer : MonoBehaviour
     private static void GameOver()
     {
         SceneManager.LoadScene("GameOver");
-    }
-
-    private static void Respawn()
-    {
-            int activeScene = SceneManager.GetActiveScene().buildIndex;
-            SceneManager.LoadScene(activeScene);      
     }
 }
 
