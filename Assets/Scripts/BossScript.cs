@@ -14,6 +14,9 @@ public class BossScript : MonoBehaviour
     private Animator anim;
     bool isThrowing = false;
 
+    public AudioClip bossHit;
+    public AudioClip bossThrow;
+
     public BossHealthBarScript healthBar;
     
 
@@ -38,6 +41,7 @@ public class BossScript : MonoBehaviour
         {
             isThrowing = true;
             Instantiate(grenade, transform.position, Quaternion.identity);
+            AudioSource.PlayClipAtPoint(bossThrow, transform.position, 0.4f);
             Invoke("resetThrowing", 0.3f);
             nextFire = Time.time + fireRate;
         }
@@ -52,6 +56,7 @@ public class BossScript : MonoBehaviour
     public void TakeDamageBoss(int damage)
     {
         health -= damage;
+        AudioSource.PlayClipAtPoint(bossHit, transform.position, 2f);
         healthBar.SetHealth(health);
 
         if (health <= 0)
