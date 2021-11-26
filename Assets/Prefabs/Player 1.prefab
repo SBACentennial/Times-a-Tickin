@@ -13,7 +13,6 @@ GameObject:
   - component: {fileID: 286232939561056314}
   - component: {fileID: 286232939561056315}
   - component: {fileID: 286232939561056312}
-  - component: {fileID: 286232939561056319}
   - component: {fileID: 286232940546742706}
   - component: {fileID: 2864461158773660252}
   - component: {fileID: 3873686061956341186}
@@ -151,19 +150,6 @@ MonoBehaviour:
   hurtSound: {fileID: 8300000, guid: 6430aba1cc674e24bbf6e4f1b28c3d19, type: 3}
   hitFeedback: {fileID: 7760138712456268669, guid: 140659f9440c6e343ae75b8efef31e60, type: 3}
   isFacingRight: 1
---- !u!114 &286232939561056319
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 286232939561056313}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a9504d3b26be09c40b0e334af2e67661, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rb: {fileID: 286232939561056315}
 --- !u!95 &286232940546742706
 Animator:
   serializedVersion: 3

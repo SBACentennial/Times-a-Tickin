@@ -38,7 +38,7 @@ public class PlayerController : MonoBehaviour
 
     // Physics
     private void FixedUpdate()
-    {
+    {   
         float horiz = Input.GetAxis("Horizontal");
         isGrounded = GroundCheck();
 

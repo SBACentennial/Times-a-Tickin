@@ -193,6 +193,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerRb: {fileID: 286232939561056315, guid: daf28bb8e35da974ab7d2b0dda28507a, type: 3}
+  hitFeedback: {fileID: 7760138712456268669, guid: 140659f9440c6e343ae75b8efef31e60, type: 3}
   totalTime: 120
   powerUp: 0
   hazard: 0
