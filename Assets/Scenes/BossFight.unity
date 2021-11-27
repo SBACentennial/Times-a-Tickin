@@ -783,6 +783,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: MovingSaw 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6828652584880553607, guid: 3c4ac80da86d7fb49abc6c0ddc3acbe9, type: 3}
+      propertyPath: m_TagString
+      value: Hazard
+      objectReference: {fileID: 0}
     - target: {fileID: 6828652585145433472, guid: 3c4ac80da86d7fb49abc6c0ddc3acbe9, type: 3}
       propertyPath: m_TagString
       value: Hazard
@@ -17497,6 +17501,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: MovingSaw 1 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 6828652584880553607, guid: 3c4ac80da86d7fb49abc6c0ddc3acbe9, type: 3}
+      propertyPath: m_TagString
+      value: Hazard
+      objectReference: {fileID: 0}
     - target: {fileID: 6828652585145433472, guid: 3c4ac80da86d7fb49abc6c0ddc3acbe9, type: 3}
       propertyPath: m_TagString
       value: Hazard
@@ -18135,6 +18143,10 @@ PrefabInstance:
     - target: {fileID: 3013129796146303267, guid: 08f323e61d0440a459b3002ec23aff87, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3013129796146303267, guid: 08f323e61d0440a459b3002ec23aff87, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 3013129796146303269, guid: 08f323e61d0440a459b3002ec23aff87, type: 3}
       propertyPath: bossHit
