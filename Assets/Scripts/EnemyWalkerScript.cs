@@ -51,7 +51,10 @@ public class EnemyWalkerScript : MonoBehaviour
         Timer timerScript = gameTimer.GetComponent<Timer>();
         if (other.gameObject.tag == "Player")
         {
-            timerScript.isSpikes = true;
+            if(timerScript != null)
+            {
+                timerScript.isSpikes = true;
+            }
         }
     }
 

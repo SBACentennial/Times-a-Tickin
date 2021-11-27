@@ -976,6 +976,10 @@ PrefabInstance:
       propertyPath: speed
       value: -2
       objectReference: {fileID: 0}
+    - target: {fileID: 3842003151233526852, guid: 2893d5cc52c37ce4a957bc9562fd37bc, type: 3}
+      propertyPath: m_Simulated
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3842003151233526862, guid: 2893d5cc52c37ce4a957bc9562fd37bc, type: 3}
       propertyPath: m_Name
       value: Drone(Walker)
