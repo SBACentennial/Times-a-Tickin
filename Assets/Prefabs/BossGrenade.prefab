@@ -139,7 +139,7 @@ MonoBehaviour:
   coinPowerUpPrefab: {fileID: 8589897292016642714, guid: 0ce80fd90afe3f143bedd49139ff99c8, type: 3}
   coinHazPrefab: {fileID: 3003012341340899716, guid: 9629fc0b75bc725479b91257acd7df65, type: 3}
   bombSound: {fileID: 8300000, guid: b9b9fc0ab2c0a54438c7753a31428554, type: 3}
-  itemExplode: {fileID: 3362150457580053501, guid: 92275162b18f5314fb25c461f32ba211, type: 3}
+  itemExplode: {fileID: 8805464222667087359, guid: d3abdf5fa66bfcd478117a9fd7a32a1c, type: 3}
 --- !u!95 &6131487106885259301
 Animator:
   serializedVersion: 3
