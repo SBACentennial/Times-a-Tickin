@@ -96,12 +96,12 @@ public class Timer : MonoBehaviour
             }
 
                 currentTime -= 1 * Time.deltaTime;
-                timerText.text = currentTime.ToString("00") + "s";
+                timerText.text = currentTime.ToString("00");
             }
 
             if (currentTime <= 0)
             {
-                timerText.text = "00.0s";
+                timerText.text = "00";
                 GameOver();
             }
         }
