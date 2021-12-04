@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class ExplosionController : MonoBehaviour
 {
+	private EnemyWalkerScript enemy;
+
 	public void DestroyThis() {
 		Destroy(this.gameObject);
 	}
@@ -15,5 +17,9 @@ public class ExplosionController : MonoBehaviour
         {
             timerScript.isExplosion = true;
         }
+
+		// if (other.gameObject.tag == "Hazard") {
+		// 	enemy.TakeDamage(30);
+		// }
 	}
 }

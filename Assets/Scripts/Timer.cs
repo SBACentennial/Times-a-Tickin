@@ -91,7 +91,7 @@ public class Timer : MonoBehaviour
 
             else if (isExplosion == true)
             {
-                currentTime -= 50;
+                currentTime -= 30;
                 isExplosion = false;
             }
 
