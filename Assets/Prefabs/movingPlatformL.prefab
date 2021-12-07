@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 18467600744826782}
   m_Layer: 10
   m_Name: movingPlatformL
-  m_TagString: MovingPlatform
+  m_TagString: Platform
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -146,3 +146,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   movingLength: 3
   movingSpeed: 5
+  isHorizontal: 1
