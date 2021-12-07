@@ -45,34 +45,34 @@ public class GrenadeScript : MonoBehaviour
         if (other.gameObject.tag == "Player")
         {
             timerScript.isSpikes = true;
-            AudioSource.PlayClipAtPoint(bombSound, transform.position, .2f);
+            AudioSource.PlayClipAtPoint(bombSound, transform.position, .4f);
             GameObject.Instantiate(itemExplode, this.transform.position, this.transform.rotation);
             Destroy(gameObject);
 
         }
         else if (other.gameObject.tag == "Bullet")
         {
-            AudioSource.PlayClipAtPoint(bombSound, transform.position, .2f);
+            AudioSource.PlayClipAtPoint(bombSound, transform.position, .4f);
             GameObject.Instantiate(itemExplode, this.transform.position, this.transform.rotation);
             Destroy(gameObject);
         }
         else if (other.gameObject.tag == "Platform")
         {           
-            AudioSource.PlayClipAtPoint(bombSound, transform.position, .2f);
+            AudioSource.PlayClipAtPoint(bombSound, transform.position, .3f);
             GameObject.Instantiate(itemExplode, this.transform.position, this.transform.rotation);
             Destroy(gameObject);
         }
 
         else if (other.gameObject.tag == "MovingPlatform")
         {
-            AudioSource.PlayClipAtPoint(bombSound, transform.position, .2f);
+            AudioSource.PlayClipAtPoint(bombSound, transform.position, .3f);
             GameObject.Instantiate(itemExplode, this.transform.position, this.transform.rotation);
             Destroy(gameObject);
         }
 
         else if (other.gameObject.tag == "Hazard")
         {
-            AudioSource.PlayClipAtPoint(bombSound, transform.position, .2f);
+            AudioSource.PlayClipAtPoint(bombSound, transform.position, .3f);
             GameObject.Instantiate(itemExplode, this.transform.position, this.transform.rotation);
             Destroy(gameObject);
         }

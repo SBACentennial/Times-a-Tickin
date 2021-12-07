@@ -10,15 +10,18 @@ public class ExplosionCrateController : MonoBehaviour
 	private bool isToched = false;
 	private float currentTime = 0.0f;
 	private Animator anim;
+	public AudioClip boomSound;
 
 	void Update() {
 		// count timer then explode
 		if (isToched) {
+			
 			anim = GetComponent<Animator>();
 			anim.SetBool("isToched", isToched);
 			currentTime = currentTime + Time.deltaTime;
 
 			if (currentTime >= timeLimit) {
+				AudioSource.PlayClipAtPoint(boomSound, transform.position, 0.4f);
 				GameObject.Instantiate(explosionAnim, this.transform.position, Quaternion.identity);
 				Destroy(this.gameObject);
 			}

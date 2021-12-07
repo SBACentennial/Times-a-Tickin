@@ -150,3 +150,4 @@ MonoBehaviour:
   box: {fileID: 5701884071460939545}
   boxExplosion: {fileID: 8805464222667087359, guid: d3abdf5fa66bfcd478117a9fd7a32a1c, type: 3}
   rBody: {fileID: 5701884071460939551}
+  crateBreak: {fileID: 8300000, guid: c8648e66eac8af04cb5a8567c2af87fe, type: 3}

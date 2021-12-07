@@ -125,6 +125,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   explosionAnim: {fileID: 1896306744048851938, guid: 7ae98fecdec194d4fb3ccf3053408301, type: 3}
   timeLimit: 3
+  boomSound: {fileID: 8300000, guid: 90a14321552b384459fdc52bf7d32c5c, type: 3}
 --- !u!95 &4940382645852715593
 Animator:
   serializedVersion: 3
