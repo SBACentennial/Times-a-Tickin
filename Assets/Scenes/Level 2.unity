@@ -34005,6 +34005,10 @@ PrefabInstance:
       propertyPath: playerRb
       value: 
       objectReference: {fileID: 1921721984}
+    - target: {fileID: 8079304795214912674, guid: 7b19f8f933c896f48a7b41304d7b2d49, type: 3}
+      propertyPath: totalTime
+      value: 80
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7b19f8f933c896f48a7b41304d7b2d49, type: 3}
 --- !u!1 &619593296 stripped
@@ -43939,8 +43943,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 8300000, guid: 1955f8cba51da284a9c0bf49abba1576, type: 3}
     - target: {fileID: 3907716709813140039, guid: b29d77d9e3923c545b256df3e6a54a34, type: 3}
+      propertyPath: m_Size.y
+      value: 4.3821735
+      objectReference: {fileID: 0}
+    - target: {fileID: 3907716709813140039, guid: b29d77d9e3923c545b256df3e6a54a34, type: 3}
       propertyPath: m_Enabled
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3907716709813140039, guid: b29d77d9e3923c545b256df3e6a54a34, type: 3}
+      propertyPath: m_Offset.y
+      value: 0.19923162
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 3907716709813140034, guid: b29d77d9e3923c545b256df3e6a54a34, type: 3}
@@ -59961,7 +59973,7 @@ PrefabInstance:
       objectReference: {fileID: 258965169}
     - target: {fileID: 6821842572278536801, guid: adfd2ca1ecb59764daf5ae5651a1e309, type: 3}
       propertyPath: m_Lens.OrthographicSize
-      value: 5
+      value: 5.5
       objectReference: {fileID: 0}
     - target: {fileID: 6821842572278536806, guid: adfd2ca1ecb59764daf5ae5651a1e309, type: 3}
       propertyPath: m_Name
@@ -59993,7 +60005,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6821842573024422594, guid: adfd2ca1ecb59764daf5ae5651a1e309, type: 3}
       propertyPath: orthographic size
-      value: 5
+      value: 5.5
       objectReference: {fileID: 0}
     - target: {fileID: 6821842573024422594, guid: adfd2ca1ecb59764daf5ae5651a1e309, type: 3}
       propertyPath: m_BackGroundColor.b
