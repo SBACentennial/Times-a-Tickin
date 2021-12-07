@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Weapon : MonoBehaviour
 {
-    private float timer = 2f;
+    private float timer = 1f;
 
     public Transform firePoint;
     public GameObject bulletPrefab;
@@ -30,7 +30,7 @@ public class Weapon : MonoBehaviour
                 AudioSource.PlayClipAtPoint(shootSound, transform.position, 1f);
                 Shoot();
                 Invoke("RestartShoot", 0.4f);
-                timer = 2f;
+                timer = 1f;
             }
         }
         anim.SetBool("isShooting", isShooting);
