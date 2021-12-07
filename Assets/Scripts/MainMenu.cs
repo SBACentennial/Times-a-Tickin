@@ -22,21 +22,6 @@ public class MainMenu : MonoBehaviour
         SceneManager.LoadScene(0);
     }
 
-    public void Pause()
-    {
-        if(pause)
-        {
-            Time.timeScale = 1;
-            pause = false;
-        }
-        else
-        {
-            Time.timeScale = 0;
-            pause = true;
-;       }
-    }
-
-
 
     public void LevelSelect()
     {
