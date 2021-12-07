@@ -11,6 +11,7 @@ public class Crates : MonoBehaviour
     public Transform box;
     public GameObject boxExplosion;
     public Rigidbody2D rBody;
+    public AudioClip crateBreak;
 
     public void TakeDamage(int damage)
     {
@@ -18,6 +19,7 @@ public class Crates : MonoBehaviour
 
         if (health <= 0)
         {
+            AudioSource.PlayClipAtPoint(crateBreak, transform.position, 0.5f);
             Die();
         }
     }

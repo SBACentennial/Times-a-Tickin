@@ -129,6 +129,7 @@ MonoBehaviour:
   coinHazPrefab: {fileID: 3003012341340899716, guid: 9629fc0b75bc725479b91257acd7df65, type: 3}
   enemy: {fileID: 3842003151233526849}
   enemyDeath: {fileID: 8805464222667087359, guid: d3abdf5fa66bfcd478117a9fd7a32a1c, type: 3}
+  deadBot: {fileID: 8300000, guid: 398cafbe08ba6554c88785d06ae1bf09, type: 3}
   groundCheck: {fileID: 3842003151627299365}
 --- !u!50 &3842003151233526852
 Rigidbody2D:

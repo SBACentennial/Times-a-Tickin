@@ -14,6 +14,8 @@ public class EnemyWalkerScript : MonoBehaviour
     public Transform enemy;
     public GameObject enemyDeath;
 
+    public AudioClip deadBot;
+
     public Transform groundCheck;
 
     bool isFacingRight = true;
@@ -61,6 +63,7 @@ public class EnemyWalkerScript : MonoBehaviour
 
         if (health <= 0)
         {
+            AudioSource.PlayClipAtPoint(deadBot, transform.position, 0.7f);
             Die();
         }
     }
