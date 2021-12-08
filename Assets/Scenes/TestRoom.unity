@@ -6470,6 +6470,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 3094768197518443234, guid: 1250dffa5d801ba4da008a45d3cc6032, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3094768197518443234, guid: 1250dffa5d801ba4da008a45d3cc6032, type: 3}
       propertyPath: isHorizontal
       value: 0
       objectReference: {fileID: 0}
@@ -6520,6 +6524,10 @@ PrefabInstance:
     - target: {fileID: 4008408955304144923, guid: 1250dffa5d801ba4da008a45d3cc6032, type: 3}
       propertyPath: m_Name
       value: FlippingPlatform
+      objectReference: {fileID: 0}
+    - target: {fileID: 6211776792830288154, guid: 1250dffa5d801ba4da008a45d3cc6032, type: 3}
+      propertyPath: rotationDuration
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1250dffa5d801ba4da008a45d3cc6032, type: 3}

@@ -5,9 +5,9 @@ using UnityEngine.SceneManagement;
 
 public class TimelineSceneChanger : MonoBehaviour
 {
+	[SerializeField] private string sceneName;
     void OnEnable()
     {
-        
-        SceneManager.LoadScene("BossFight");
+        SceneManager.LoadScene(sceneName);
     }
 }

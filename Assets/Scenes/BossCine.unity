@@ -6893,6 +6893,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b6f24d74fe129db4aa1e98b01fe18be1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sceneName: BossFight
 --- !u!4 &2000633029
 Transform:
   m_ObjectHideFlags: 0

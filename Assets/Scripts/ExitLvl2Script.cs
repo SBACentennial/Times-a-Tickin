@@ -9,7 +9,7 @@ public class ExitLvl2Script : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            SceneManager.LoadScene("Level 3");
+            SceneManager.LoadScene("Level 3 Intro");
         }
     }
 }
