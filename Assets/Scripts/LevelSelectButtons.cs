@@ -25,6 +25,11 @@ public class LevelSelectButtons : MonoBehaviour
         SceneManager.LoadScene(4);
     }
 
+    public void DangerAKABoss()
+    {
+        SceneManager.LoadScene(8);
+    }
+
     public void QuitGame()
     {
 #if UNITY_EDITOR
