@@ -33938,7 +33938,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8079304794968138386, guid: 7b19f8f933c896f48a7b41304d7b2d49, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8079304794968138389, guid: 7b19f8f933c896f48a7b41304d7b2d49, type: 3}
       propertyPath: m_Camera
@@ -44064,6 +44064,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1297745654869907489, guid: b29d77d9e3923c545b256df3e6a54a34, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1297745654869907489, guid: b29d77d9e3923c545b256df3e6a54a34, type: 3}
       propertyPath: shootSound
       value: 
