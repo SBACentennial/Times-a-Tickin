@@ -3834,12 +3834,12 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1168256877287188713, guid: 9f39ff08132c9b946b872b84e1990153, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1168256877287188713, guid: 9f39ff08132c9b946b872b84e1990153, type: 3}
       propertyPath: m_audioClip
       value: 
-      objectReference: {fileID: 8300000, guid: 228e28998cd24d3459d579ef333eac00, type: 3}
+      objectReference: {fileID: 8300000, guid: 163d2374209bb0848ba22cbf559aabd2, type: 3}
     - target: {fileID: 2435917723037295094, guid: 9f39ff08132c9b946b872b84e1990153, type: 3}
       propertyPath: m_IsActive
       value: 0
