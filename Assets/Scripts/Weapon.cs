@@ -12,28 +12,33 @@ public class Weapon : MonoBehaviour
     private bool isShooting = false;
     private Animator anim;
     public AudioClip shootSound;
+    public GameObject pauseScreen;
+    public MenuHide menuPause;
 
     private void Start()
     {
         anim = GetComponent<Animator>();
+        menuPause = pauseScreen.GetComponent<MenuHide>();
     }
     // Update is called once per frame
     void Update()
     {
         timer -= Time.deltaTime;
-
-        if (timer <= 0)
+        if(!(menuPause.isMenuActive))
         {
-            if (Input.GetButtonDown("Fire1"))
+            if (timer <= 0)
             {
-                isShooting = true;
-                AudioSource.PlayClipAtPoint(shootSound, transform.position, 1f);
-                Shoot();
-                Invoke("RestartShoot", 0.4f);
-                timer = 1f;
+                if (Input.GetButtonDown("Fire1"))
+                {
+                    isShooting = true;
+                    AudioSource.PlayClipAtPoint(shootSound, transform.position, 1f);
+                    Shoot();
+                    Invoke("RestartShoot", 0.4f);
+                    timer = 1f;
+                }
             }
+            anim.SetBool("isShooting", isShooting);
         }
-        anim.SetBool("isShooting", isShooting);
     }
 
     void Shoot()

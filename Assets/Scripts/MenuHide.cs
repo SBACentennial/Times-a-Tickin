@@ -7,9 +7,9 @@ public class MenuHide : MonoBehaviour
     [SerializeField] private GameObject mainMenuButton;
     [SerializeField] private GameObject quitButton;
     [SerializeField] private GameObject backdrop;
-    //[SerializeField] private GameObject clockObject;
+    [SerializeField] private GameObject clockObject;
 
-    private bool isMenuActive = false;
+    public bool isMenuActive = false;
 
     // Update is called once per frame
     void Update()
@@ -28,7 +28,7 @@ public class MenuHide : MonoBehaviour
             mainMenuButton.SetActive(true);
             quitButton.SetActive(true);
             backdrop.SetActive(true);
-            //clockObject.SetActive(true);
+            clockObject.SetActive(true);
             Time.timeScale = 0;
         }
         else if(isMenuActive == false)
@@ -36,7 +36,7 @@ public class MenuHide : MonoBehaviour
             mainMenuButton.SetActive(false);
             quitButton.SetActive(false);
             backdrop.SetActive(false);
-            //clockObject.SetActive(false);
+            clockObject.SetActive(false);
             Time.timeScale = 1;
         }
     }

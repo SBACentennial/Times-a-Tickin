@@ -506,7 +506,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7375584850053876469, guid: b15def9f4d1510a4aae1eefa48f0ad31, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b15def9f4d1510a4aae1eefa48f0ad31, type: 3}
@@ -3081,6 +3081,8 @@ MonoBehaviour:
   mainMenuButton: {fileID: 936881073}
   quitButton: {fileID: 904895124}
   backdrop: {fileID: 686754586}
+  clockObject: {fileID: 1524024334}
+  isMenuActive: 0
 --- !u!4 &532849426
 Transform:
   m_ObjectHideFlags: 0
@@ -5367,7 +5369,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 100
+  m_SortingOrder: 99
   m_Sprite: {fileID: 21300000, guid: 9de05b29e91428a4394a8bd3c3814af1, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 0.7882353}
   m_FlipX: 0
@@ -6448,7 +6450,7 @@ GameObject:
   - component: {fileID: 878390111}
   m_Layer: 10
   m_Name: Level3GroundTile
-  m_TagString: Untagged
+  m_TagString: Platform
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -27212,6 +27214,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0ce80fd90afe3f143bedd49139ff99c8, type: 3}
+--- !u!1 &1524024334 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7375584850053876469, guid: b15def9f4d1510a4aae1eefa48f0ad31, type: 3}
+  m_PrefabInstance: {fileID: 64906856}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1531369759 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5663970175309770695, guid: 9f39ff08132c9b946b872b84e1990153, type: 3}
@@ -27967,7 +27974,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 59996735934394003, guid: 17191ee243b867b4696b414776602d0f, type: 3}
       propertyPath: speed
-      value: 2.5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 59996735934394013, guid: 17191ee243b867b4696b414776602d0f, type: 3}
       propertyPath: m_Color.b
@@ -30185,6 +30192,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2864461158773660252, guid: daf28bb8e35da974ab7d2b0dda28507a, type: 3}
+      propertyPath: pauseScreen
+      value: 
+      objectReference: {fileID: 532849424}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: daf28bb8e35da974ab7d2b0dda28507a, type: 3}
 --- !u!50 &3907716710560537835 stripped

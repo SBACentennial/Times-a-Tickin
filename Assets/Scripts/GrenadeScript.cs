@@ -77,6 +77,13 @@ public class GrenadeScript : MonoBehaviour
             Destroy(gameObject);
         }
 
+        else if (other.gameObject.tag == "Ground")
+        {
+            AudioSource.PlayClipAtPoint(bombSound, transform.position, .3f);
+            GameObject.Instantiate(itemExplode, this.transform.position, this.transform.rotation);
+            Destroy(gameObject);
+        }
+
 
 
     }

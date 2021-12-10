@@ -252,6 +252,7 @@ MonoBehaviour:
   mainMenuButton: {fileID: 1961476963}
   quitButton: {fileID: 778710478}
   backdrop: {fileID: 1406776752}
+  isMenuActive: 0
 --- !u!4 &213987578
 Transform:
   m_ObjectHideFlags: 0
@@ -1349,7 +1350,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6828652585273584384, guid: 3c4ac80da86d7fb49abc6c0ddc3acbe9, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.69
+      value: 0.09
       objectReference: {fileID: 0}
     - target: {fileID: 6828652585830307008, guid: 3c4ac80da86d7fb49abc6c0ddc3acbe9, type: 3}
       propertyPath: m_LocalPosition.x
@@ -7600,6 +7601,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2864461158773660252, guid: daf28bb8e35da974ab7d2b0dda28507a, type: 3}
+      propertyPath: pauseScreen
+      value: 
+      objectReference: {fileID: 213987576}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: daf28bb8e35da974ab7d2b0dda28507a, type: 3}
 --- !u!1 &1498127182 stripped

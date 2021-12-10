@@ -44073,6 +44073,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 8300000, guid: 62f0467ec6a8c584e899cabd70aa8a34, type: 3}
     - target: {fileID: 1297745654869907489, guid: b29d77d9e3923c545b256df3e6a54a34, type: 3}
+      propertyPath: pauseScreen
+      value: 
+      objectReference: {fileID: 1861499195796272005}
+    - target: {fileID: 1297745654869907489, guid: b29d77d9e3923c545b256df3e6a54a34, type: 3}
       propertyPath: firingPrefab
       value: 
       objectReference: {fileID: 1045716125073545888, guid: 768165fc411a4934d953ae9cacffd186, type: 3}
@@ -60624,6 +60628,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: MenuHide
       objectReference: {fileID: 0}
+    - target: {fileID: 1861499195161862276, guid: 487075365dac18a49a66937cd8be338b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1861499195161862277, guid: 487075365dac18a49a66937cd8be338b, type: 3}
       propertyPath: backdrop
       value: 
@@ -60686,6 +60694,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 487075365dac18a49a66937cd8be338b, type: 3}
+--- !u!1 &1861499195796272005 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1861499195161862276, guid: 487075365dac18a49a66937cd8be338b, type: 3}
+  m_PrefabInstance: {fileID: 1861499195796272004}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &5827016218751002566
 PrefabInstance:
   m_ObjectHideFlags: 0
