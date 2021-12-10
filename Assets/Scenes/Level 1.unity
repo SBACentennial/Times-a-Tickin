@@ -21287,11 +21287,6 @@ Transform:
   m_Father: {fileID: 1245967750}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &755403150 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7375584850053876469, guid: b15def9f4d1510a4aae1eefa48f0ad31, type: 3}
-  m_PrefabInstance: {fileID: 7375584849600463739}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &819586138 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2095288581900301674, guid: 88d328292a40bd447abb58b664850e80, type: 3}
@@ -23912,7 +23907,6 @@ MonoBehaviour:
   mainMenuButton: {fileID: 660705247}
   quitButton: {fileID: 912009623}
   backdrop: {fileID: 856712658}
-  clockObject: {fileID: 755403150}
 --- !u!4 &1473294912
 Transform:
   m_ObjectHideFlags: 0
@@ -27577,6 +27571,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8079304796232742601}
     m_Modifications:
+    - target: {fileID: 7375584848504917181, guid: b15def9f4d1510a4aae1eefa48f0ad31, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7375584849469076313, guid: b15def9f4d1510a4aae1eefa48f0ad31, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7375584850053876468, guid: b15def9f4d1510a4aae1eefa48f0ad31, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -27624,6 +27626,10 @@ PrefabInstance:
     - target: {fileID: 7375584850053876469, guid: b15def9f4d1510a4aae1eefa48f0ad31, type: 3}
       propertyPath: m_Name
       value: Clock
+      objectReference: {fileID: 0}
+    - target: {fileID: 7375584850053876469, guid: b15def9f4d1510a4aae1eefa48f0ad31, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b15def9f4d1510a4aae1eefa48f0ad31, type: 3}

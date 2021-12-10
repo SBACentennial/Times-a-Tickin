@@ -504,13 +504,12 @@ PrefabInstance:
       propertyPath: m_Name
       value: Clock
       objectReference: {fileID: 0}
+    - target: {fileID: 7375584850053876469, guid: b15def9f4d1510a4aae1eefa48f0ad31, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b15def9f4d1510a4aae1eefa48f0ad31, type: 3}
---- !u!1 &64906857 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7375584850053876469, guid: b15def9f4d1510a4aae1eefa48f0ad31, type: 3}
-  m_PrefabInstance: {fileID: 64906856}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &71311708
 GameObject:
   m_ObjectHideFlags: 0
@@ -3082,7 +3081,6 @@ MonoBehaviour:
   mainMenuButton: {fileID: 936881073}
   quitButton: {fileID: 904895124}
   backdrop: {fileID: 686754586}
-  clockObject: {fileID: 64906857}
 --- !u!4 &532849426
 Transform:
   m_ObjectHideFlags: 0
